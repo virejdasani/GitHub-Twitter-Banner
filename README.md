@@ -1,6 +1,11 @@
-# GitHub-Twitter-Banner
+# GitHub Twitter Banner
 
 ## Preview
-![]()
 
-## TODO: add functionality to download the css image
+![](https://raw.githubusercontent.com/virejdasani/GitHub-Twitter-Banner/main/assets/sc/sc1.png)
+
+![](https://raw.githubusercontent.com/virejdasani/GitHub-Twitter-Banner/main/assets/sc/sc2.png)
+
+#### TODO
+
+- add functionality to download the css image

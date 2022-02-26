@@ -1,0 +1,9 @@
+div {
+  background: linear-gradient(45deg, #add8ff, #cc68ff);
+}
+
+div {
+  background-image: url(https://uploads-ssl.webflow.com/610917d7afc6c1207bd39993/61fbaa2049e685cd35442ada_aurora-bg2.jpg);
+  background-position: 50% 0%;
+  background-size: cover;
+}

@@ -28,7 +28,7 @@ body {
 }
 
 .avatar {
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 50%;
   width: 300px;
   max-height: 300px;

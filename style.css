@@ -21,7 +21,7 @@ body {
   max-width: 800px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   height: 300px;
   width: 900px;
   background: linear-gradient(76.9deg, rgba(255, 90, 90, 1) 27.2%, rgba(130, 5, 255, 1) 79.9%);

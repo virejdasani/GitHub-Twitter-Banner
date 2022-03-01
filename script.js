@@ -20,12 +20,12 @@ async function getRepos(username) {
     "https://gh-pinned-repos.egoist.sh/?username=" + username
   );
   const respData = await resp.json();
-  console.log(respData);
   addReposToCard(respData);
 }
 
 function createUserCard(user) {
   const cardHTML = `
+      <div id="capture">
         <div class="card">
             <div>
                 <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
@@ -43,6 +43,7 @@ function createUserCard(user) {
                 <div id="repos"></div>
             </div>
         </div>
+      </div>
     `;
 
   main.innerHTML = cardHTML;
@@ -63,11 +64,27 @@ function addReposToCard(repos) {
   });
 }
 
+function createImg(node) {
+  domtoimage
+    .toPng(node)
+    .then(function (dataUrl) {
+      var img = new Image();
+      img.src = dataUrl;
+      document.body.appendChild(img);
+    })
+    .catch(function (error) {
+      console.error("oops, something went wrong!", error);
+    });
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-document.getElementById("card").scrollIntoView();
-
+  document.getElementById("card").scrollIntoView();
 
   const user = search.value;
 
@@ -76,4 +93,6 @@ document.getElementById("card").scrollIntoView();
 
     search.value = "";
   }
+
+  createImg(document.getElementById("capture"));
 });

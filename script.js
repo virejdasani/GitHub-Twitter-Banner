@@ -3,7 +3,7 @@ const APIURL = "https://api.github.com/users/";
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
-const downloadButton = document.getElementById("download");
+const generateButton = document.getElementById("generate");
 
 getUser("virejdasani");
 
@@ -96,6 +96,25 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-downloadButton.addEventListener("click", () => {
+generateButton.addEventListener("click", () => {
   createImg(document.getElementById("capture"));
+  sleep(2000).then(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+
+  sleep(500).then(() => {
+    var mainDiv = document.createElement("div");
+    mainDiv.id = "underImg";
+    var github = document.createElement("a");
+    github.id = "github";
+    github.className = "github-star-button";
+
+    github.innerHTML = `
+    <a class="gh-button" href="https://github.com/virejdasani/GitHub-Twitter-Banner"><span class="gh-button__icon"></span>Star on GitHub</a>
+    </br>
+      `;
+    mainDiv.appendChild(github);
+
+    document.body.appendChild(mainDiv);
+  });
 });

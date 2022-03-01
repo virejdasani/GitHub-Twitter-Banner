@@ -1,4 +1,4 @@
-# [GitHub Twitter Banner]( https://virejdasani.github.io/GitHub-Twitter-Banner/)
+# [GitHub Twitter Banner](https://virejdasani.github.io/GitHub-Twitter-Banner/)
 
 > under development
 
@@ -7,7 +7,3 @@
 ![](https://raw.githubusercontent.com/virejdasani/GitHub-Twitter-Banner/main/assets/sc/sc1.png)
 
 ![](https://raw.githubusercontent.com/virejdasani/GitHub-Twitter-Banner/main/assets/sc/sc2.png)
-
-#### TODO
-
-- add functionality to download the css image

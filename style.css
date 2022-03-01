@@ -43,7 +43,8 @@ h2 {
   margin-top: 0;
   font-size: larger;
   font-family: "poppins", sans-serif;
-  font-weight: bolder;
+  font-weight: 10px;
+  text-decoration: underline;
 }
 
 p {
@@ -70,15 +71,22 @@ p {
 }
 
 .repo {
-  background-color: #2a2a72;
   border-radius: 5px;
   display: inline-block;
-  color: white;
-  font-size: 0.7rem;
+  color: black;
+  font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
+  text-align: center;
   margin-bottom: 0.5rem;
   text-decoration: none;
+  border-radius: 10px;
+  border: solid 1px #1D2228;
+  margin-top: 0.1rem;
+}
+
+#repos {
+  margin-top: 0.5rem;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

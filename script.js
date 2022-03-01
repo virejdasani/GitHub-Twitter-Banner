@@ -3,6 +3,7 @@ const APIURL = "https://api.github.com/users/";
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
+const downloadButton = document.getElementById("download");
 
 getUser("virejdasani");
 
@@ -31,7 +32,7 @@ function createUserCard(user) {
                 <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
             </div>
             <div class="user-info">
-                <h2>${user.name}</h2>
+                <strong><h2>${user.name}</h2></strong>
                 <p>${user.bio}</p>
 
                 <ul class="info">
@@ -93,6 +94,8 @@ form.addEventListener("submit", (e) => {
 
     search.value = "";
   }
+});
 
+downloadButton.addEventListener("click", () => {
   createImg(document.getElementById("capture"));
 });
